@@ -54,7 +54,8 @@ const App = () => {
             <img src={product.image ? product.image.src : 'https://messold.com/data/img/messold-logo.png'} alt={product.title} />
             <h2>{product.title}</h2>
             <p><b>Category</b>: {product.product_type}</p>
-            <p><b>Tags</b>: {product.tags}</p>
+            <p><b>Product ID</b>: {product.id}</p>
+            <p><b>Tags</b>: {product.tags}</p>           
             {showVariants[product.id] && (
               <div>
                 <h3><b>Variants</b>:</h3>

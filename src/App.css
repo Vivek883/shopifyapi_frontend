@@ -1,38 +1,80 @@
+/* App.css */
+
+body {
+  background-color: #f4f2f3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  background-color: #bacec1; /* Yellow background */
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: inline-block; /* Only highlight the text and not the entire line */
+}
+
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color:  #bacec1;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar a {
   color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 1rem;
+  padding: 1rem
+}
+
+.product-card {
+  background-color: #f2e9eb;
+  border: 1px solid #55c2dd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.toggle-variants-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.toggle-variants-button:hover {
+  background-color: #0056b3;
+}
+.logo {
+  width: 170px; /* Adjust width as needed */
+  margin-right: 0.5rem; /* Add some space between logo and text */
 }
